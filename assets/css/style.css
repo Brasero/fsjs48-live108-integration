@@ -1,0 +1,167 @@
+/*@font-face {*/
+/* font-family: "Poppins";*/
+/* src: url("../fonts/Poppins/Poppins-Regular.ttf") format('truetype');*/
+/*}*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');*/
+
+figure, time {
+ border: 4px solid violet;
+ /* La propriété border rassemble les trois propriété ci dessous */
+ /*border-width: 3px;*/
+ /*border-color: violet;*/
+ border-style: solid /*dashed dotted double*/;
+ color: hsl(90, 100%, 50%);
+ /* 1in (pouce) = 2.54cm = 72pt (point) = 6pc (picas)  */
+ font-size: 32px;
+}
+
+figcaption {
+ border: 1px solid orange;
+ /*width: 100vw;*/
+ /*height: 100vh;*/
+ font-size: 2rem;
+}
+
+figure {
+ margin: 15px 40px;
+}
+
+header nav {
+
+ /* (0,0,2)  */
+ margin-top: 40px;
+ border: 1px solid black;
+}
+
+
+* {
+  margin: 0;
+  font-family: "Poppins", serif;
+ }
+
+ul li a {
+ color: orange;
+}
+
+
+.secondClasse.title {
+ color: orange;
+}
+
+.title {
+ color: salmon;
+ border: none;
+}
+
+header#head {
+ border: 6px solid orange;
+}
+
+h2.title {
+ color: lightgreen;
+ text-align: right;
+}
+
+h2 {
+ color: violet;
+ border-bottom: 1px solid red;
+}
+
+div.maDiv {
+ border: 1px solid orange;
+}
+
+div a span.subsubtitle {
+ color: red;
+}
+
+div a span {
+ color: orange;
+}
+
+p .mon_paragraphe {
+ border: 10px solid rosybrown;
+}
+
+p > .mon_paragraphe {
+ border: 15px solid blue;
+}
+
+p > .mon_paragraphe + span {
+ border: 10px solid black;
+}
+
+.mon_paragraphe ~ h2 {
+ color: orange;
+}
+
+a:hover {
+ color: black;
+ border-bottom: 1px solid black;
+}
+
+a:active {
+ color: #C8C8C8;
+}
+
+a:visited {
+ color: red;
+}
+
+p span:first-child {
+ font-size: 30px;
+}
+
+p span:last-child {
+ font-size: 20px;
+ color: orange;
+}
+
+/* An + B */
+
+p span:nth-child(4n + 2) {
+ text-transform: uppercase;
+}
+
+h2:not(.title) {
+ color: orange;
+ font-size: 40px;
+}
+
+.mon_paragraphe:not(p) {
+ font-size: 40px;
+}
+
+h2::first-letter {
+ font-size: 45px;
+}
+
+body {
+ background: url("../../alignItems.png") no-repeat;
+ background-size: cover;
+}
+
+p {
+ text-align: justify;
+ text-decoration: line-through;
+ text-transform: capitalize;
+ backdrop-filter: blur(10px); /*Permet d'appliquer un filtre sur les element en arrière plan*/
+}
+
+span.subtitle {
+ font-weight: 100;
+ font-style: oblique;
+}
+
+span.subtitle::before {
+ content: ".";
+ color: red;
+ font-size: 45px;
+}
+
+span.subtitle::after {
+ content: ".";
+ color: red;
+ font-size: 45px;
+}
