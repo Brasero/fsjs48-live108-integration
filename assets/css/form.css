@@ -2,60 +2,67 @@
  box-sizing: border-box;
 }
 
-form {
- width: 650px;
- margin: 0 auto;
-}
-
-.group {
- border: 1px solid #c8c8c8;
- padding: 10px 15px;
- border-radius: 8px;
- margin-bottom: 25px;
-}
-
-.group legend {
- padding: 0 15px;
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 }
 
 .inputGroup {
+ display: flex;
  width: 100%;
- padding: 15px 8px;
- margin-bottom: 15px;
- border-bottom: 1px solid #c8c8c8;
+ justify-content: space-between;
+ height: 50px;
+ align-items: center;
 }
 
-.inputGroup:last-of-type {
- border-bottom: none;
+.inputGroup label {
+ align-self: stretch;
+ flex-grow: 1;
+ background: red;
+ order: 2;
 }
-input:not([type="submit"]) {
+
+.inputGroup span {
+ background: green;
+ align-self: stretch;
+ flex-grow: 4;
+ order: 1;
+}
+
+.inputGroup input {
+ height: 30px;
  width: 70%;
- float: right;
- height: 20px;
+ flex-shrink: 1;
+ order: 3;
 }
 
-input[type="submit"] {
- padding: 15px 20px;
- border-radius: 8px;
- border: none;
- color: #fff;
- background: #DD5735;
- margin: 0 auto;
- display: block;
+fieldset.group:nth-child(2) {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
 }
 
-select,
-textarea {
- display: block;
- width: 100%;
+
+form {
+ width: 650px;
 }
 
-select {
- height: 25px;
- padding-left: 15px;
- margin-bottom: 15px;
+section {
+ display: flex;
+ margin-top: 50px;
+ row-gap: 5px;
+ column-gap: 25px;
+ border: 1px solid red;
+ max-width: 350px;
+ flex-wrap: wrap-reverse;
+ justify-content: center;
 }
 
-textarea {
- height: 100px;
+section div {
+ height: 45px;
+ width: 45px;
+ background: lightgreen;
+ flex-shrink: 0;
 }
