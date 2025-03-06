@@ -1,0 +1,61 @@
+* {
+ box-sizing: border-box;
+}
+
+form {
+ width: 650px;
+ margin: 0 auto;
+}
+
+.group {
+ border: 1px solid #c8c8c8;
+ padding: 10px 15px;
+ border-radius: 8px;
+ margin-bottom: 25px;
+}
+
+.group legend {
+ padding: 0 15px;
+}
+
+.inputGroup {
+ width: 100%;
+ padding: 15px 8px;
+ margin-bottom: 15px;
+ border-bottom: 1px solid #c8c8c8;
+}
+
+.inputGroup:last-of-type {
+ border-bottom: none;
+}
+input:not([type="submit"]) {
+ width: 70%;
+ float: right;
+ height: 20px;
+}
+
+input[type="submit"] {
+ padding: 15px 20px;
+ border-radius: 8px;
+ border: none;
+ color: #fff;
+ background: #DD5735;
+ margin: 0 auto;
+ display: block;
+}
+
+select,
+textarea {
+ display: block;
+ width: 100%;
+}
+
+select {
+ height: 25px;
+ padding-left: 15px;
+ margin-bottom: 15px;
+}
+
+textarea {
+ height: 100px;
+}

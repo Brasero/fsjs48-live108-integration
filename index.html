@@ -6,70 +6,43 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- Chargement de fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <!-- Fin des chargements -->
+  <link rel="stylesheet" href="./assets/css/form.css" />
 
-  <!-- Kit FontAwesome -->
-  <script src="https://kit.fontawesome.com/9b3cf40a91.js" crossorigin="anonymous"></script>
-  <!-- fin -->
-
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Green Office</title>
+  <title>Le formulaire</title>
 </head>
 <body>
-<header>
-  <div class="brand">
-    <img src="./assets/img/logo.png" alt="Logo Green office">
-  </div>
-  <nav>
-    <a href="">Location</a>
-    <a href="">About us</a>
-    <a href="">Contact</a>
-  </nav>
-</header>
-<main>
-  <h1>about us</h1>
-  <section class="article">
-    <h2 class="article__title">who we are</h2>
-    <img src="./assets/img/who.jpg" alt="who we are">
-    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, alias amet consequatur doloremque est impedit laboriosam perferendis quasi tenetur! Ab atque consequuntur cumque provident reiciendis.</p>
-    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ducimus eligendi fuga fugit mollitia pariatur, rerum vel. Accusamus, ex, excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam blanditiis, cum dignissimos ea error expedita fuga in ipsa itaque iure iusto, quaerat, quibusdam quis rem sequi suscipit totam vel!</p>
-    <a class="article__link" href="#">Read more</a>
-  </section>
-  <section class="article">
-    <h2 class="article__title">what we do</h2>
-    <img src="./assets/img/what.jpg" alt="what we do">
-    <p class="article__text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut cumque deleniti doloremque dolores eum eveniet ex illo labore officia porro possimus quod reprehenderit, sint ullam vel vitae voluptatibus? Hic quae sit tempore ut? Dicta!
-    </p>
-    <p class="article__text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa error et labore neque nesciunt odio quis similique, suscipit totam voluptates!
-    </p>
-    <p class="article__text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam at eveniet fugit illo maiores modi, molestias non obcaecati quaerat sequi totam! Assumenda, reiciendis, voluptates!
-    </p>
-    <ul class="article__list">
-      <li >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor!</li>
-      <li >Lorem ipsum dolor sit amet</li>
-      <li >dolor sit amet, consectetur adipisicing</li>
-      <li >ipsum dolor sit amet, consectetur adipisicing elit.</li>
-      <li >Lorem ipsum dolor sit amet</li>
-      <li >ipsum dolor sit amet, consectetur adipisicing elit.</li>
-    </ul>
-    <a href="" class="article__link">Read more</a></section>
-</main>
-<footer>
-  <img src="./assets/img/logo-3wa.png" alt="3wa">
-  <p>
-    Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing <a href="#">elit. Dignissimos dolor, ea expedita iusto rem totam.</a>
-    Lorem ipsum dolor sit amet.
-  </p>
-  <p>
-    Lorem <a href="#">ipsum</a> dolor <a href="#">sit</a> amet.
-  </p>
-</footer>
+  <form action="./" method="get"> <!-- enctype="multipart/form-data" -->
+    <fieldset class="group">
+      <legend>Mes coordonées</legend>
+      <div class="inputGroup">
+        <label for="surname">Prénom</label>
+        <input id="surname" type="text" name="prenom" required />
+      </div>
+      <div class="inputGroup">
+        <label for="name">Nom</label>
+        <input id="name" type="text" name="nom" required />
+      </div>
+      <div class="inputGroup">
+        <label for="mail">Email</label>
+        <input id="mail" type="email" name="mail" required />
+      </div>
+      <div class="inputGroup">
+        <input type="password" name="pass" id="" />
+      </div>
+    </fieldset>
+    <fieldset class="group">
+      <legend>Ma demande</legend>
+      <select id="demand" name="object" required>
+        <option value="">----</option>
+        <option value="contact">Je veut être recontacté</option>
+        <option value="price">Je veut un devis</option>
+        <option value="info">Je veut plus d'information</option>
+      </select>
+      <textarea required name="message" id="message" placeholder="Votre message" maxlength="10" minlength="1"></textarea>
+    </fieldset>
+    <div class="group">
+      <input type="submit" value="Valider le formulaire" />
+    </div>
+  </form>
 </body>
 </html>
