@@ -1,0 +1,142 @@
+Flexbox
+Tester les principales propriétés de Flexbox
+
+Défaut
+A
+B
+C
+D
+E
+F
+flex-direction: row-reverse
+A
+B
+C
+D
+E
+F
+flex-direction: column
+A
+B
+C
+D
+E
+F
+flex-direction: column-reverse
+A
+B
+C
+D
+E
+F
+nowrap
+A
+B
+C
+D
+E
+F
+wrap
+A
+B
+C
+D
+E
+F
+align-items: center
+A
+B
+C
+D
+E
+F
+align-items: flex-start
+A
+B
+C
+D
+E
+F
+align-items: flex-end
+A
+B
+C
+D
+E
+F
+justify-content: center
+A
+B
+C
+D
+E
+F
+justify-content: flex-start
+A
+B
+C
+D
+E
+F
+justify-content: flex-end
+A
+B
+C
+D
+E
+F
+justify-content: space-between
+A
+B
+C
+D
+E
+F
+justify-content: space-around
+A
+B
+C
+D
+E
+F
+justify-content: space-evenly
+A
+B
+C
+D
+E
+F
+order
+A
+B
+C
+D
+E
+F
+grow
+A
+B
+C
+D
+E
+F
+shrink
+A
+B
+C
+D
+E
+F
+grow
+flex-grow: 1
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, cumque, suscipit excepturi modi officiis expedita at ea aliquam perspiciatis quia perferendis eum quisquam! Fugit, a, illum, quae velit maxime vitae alias dicta minima voluptate dolores cum corporis dolore et nam rem eius sunt sint ducimus explicabo quasi ex eligendi asperiores. Blanditiis explicabo fuga labore laudantium sed distinctio facilis.
+
+flex-grow: 2
+Asperiores, unde, cum velit obcaecati aspernatur a quisquam sit laudantium nisi nulla tempora repudiandae eos quidem esse eius dolorem et pariatur non iste fuga. Dolor, porro labore quaerat rerum numquam enim? Veniam, maxime, tempore aliquid culpa nesciunt asperiores quasi aperiam labore ipsa veritatis doloremque deserunt nisi non eos ex quibusdam quod tempora ratione aliquam autem dolores est minima sunt? Assumenda, numquam amet enim perferendis corporis cum voluptas sint fuga repellat illo a vel sunt.
+
+flex-grow: 1
+Sunt, asperiores molestias excepturi soluta aut officiis minima dolorum commodi quasi tempore dolore labore officia dolorem explicabo esse laudantium eveniet neque incidunt cupiditate fugiat vitae expedita aliquid sequi necessitatibus voluptatibus quibusdam veritatis cum! Quae, modi, architecto.
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.
