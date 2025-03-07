@@ -12,233 +12,43 @@
 </head>
 <body>
   <header>
-    <h1>Flexbox</h1>
-    <p>Tester les principales propriétés de Flexbox</p>
+    <h1>Table</h1>
+    <p>Les tableaux en html / css</p>
   </header>
   <main>
-    <section>
-      <h2>Défaut</h2>
-      <ul>
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>flex-direction: row-reverse</h2>
-      <ul class="row-reverse">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>flex-direction: column</h2>
-      <ul class="column">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>flex-direction: column-reverse</h2>
-      <ul class="column column-reverse">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>nowrap</h2>
-      <ul class="s-width">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>wrap</h2>
-      <ul class="s-width wrap">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>align-items: center</h2>
-      <ul class="evenHeight align-center">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>align-items: flex-start</h2>
-      <ul class="evenHeight align-start">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>align-items: flex-end</h2>
-      <ul class="evenHeight align-end">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
+    <table>
+      <thead> <!-- Entête de tableaux -->
+      <tr> <!-- Ligne de tableau -->
+        <th>Entête 1</th> <!-- Cellule d'entête de tableaux -->
+        <th>Entête 2</th>
+        <th>Entête 3</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr> <!-- Ligne de tableau -->
+          <td colspan="3" rowspan="2">Colonne 1, 2 & 3</td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <td rowspan="2">Colonne 1</td> <!-- Cellule de tableau (à utiliser dans le corp ou le pied de tableau, mais pas dans l'entête) -->
+          <td>Colonne 2</td>
+          <td>Colonne 3</td>
+        </tr>
+        <tr>
+          <td>Colonne 2</td>
+          <td>Colonne 3</td>
+        </tr>
 
-    <section>
-      <h2>justify-content: center</h2>
-      <ul class="justify-center">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>justify-content: flex-start</h2>
-      <ul>
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>justify-content: flex-end</h2>
-      <ul class="justify-end">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>justify-content: space-between</h2>
-      <ul class="justify-between">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>justify-content: space-around</h2>
-      <ul class="justify-around">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>justify-content: space-evenly</h2>
-      <ul class="justify-evenly">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>order</h2>
-      <ul class="order">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>grow</h2>
-      <ul class="grow">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>shrink</h2>
-      <ul class="shrink">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-      </ul>
-    </section>
-    <section>
-      <h2>grow</h2>
-      <div class="container">
-        <div>
-          <h3>flex-grow: 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa, ex id praesentium quasi velit voluptate.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa, ex id praesentium quasi velit voluptate. Aliquam aliquid animi at aut autem beatae blanditiis doloribus ea eaque enim error eum ex fuga id illo labore, necessitatibus nihil optio, quasi quo sint suscipit temporibus, veniam voluptatem.
-          </p>
-        </div>
-        <div class="grow2">
-          <h3>flex-grow: 2</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa, ex id praesentium quasi velit voluptate. Aliquam aliquid animi at aut autem beatae blanditiis doloribus ea eaque enim error eum ex fuga id illo labore, necessitatibus nihil optio, quasi quo sint suscipit temporibus, veniam voluptatem.
-          </p>
-        </div>
-        <div>
-          <h3>flex-grow: 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa, ex id praesentium quasi velit voluptate. Aliquam aliquid animi at aut autem beatae blanditiis doloribus ea eaque enim error eum ex fuga id illo labore, necessitatibus nihil optio, quasi quo sint suscipit temporibus, veniam voluptatem.
-          </p>
-        </div>
-      </div>
-    </section>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Pied de colonne 1</td>
+          <td>Pied de colonne 2</td>
+          <td>Pied de colonne 3</td>
+        </tr>
+      </tfoot>
+    </table>
   </main>
 </body>
 </html>
