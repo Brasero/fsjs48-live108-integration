@@ -5,6 +5,7 @@
 body {
  margin: 0;
  padding: 0;
+ background: #eeeeee;
 }
 
 header {
@@ -35,12 +36,18 @@ main section {
  width: 70%;
 }
 
-main section ul {
+main section ul,
+.container {
  list-style: none;
  display: flex;
  width: 100%;
  border: 1px dashed #DD5735;
  padding: 0;
+}
+
+.container {
+ padding: 15px;
+ gap: 15px;
 }
 
 main section ul li {
@@ -50,4 +57,128 @@ main section ul li {
  display: flex;
  justify-content: center;
  align-items: center;
+ background: #fff;
+}
+
+.row-reverse {
+ flex-direction: row-reverse;
+}
+
+.column {
+ flex-direction: column;
+}
+
+.column li {
+ width: 100%;
+ justify-content:flex-start;
+ padding-left: 15px;
+}
+
+.column.column-reverse {
+ flex-direction: column-reverse;
+}
+
+.s-width {
+ width: 20%;
+}
+
+.s-width li {
+ flex-shrink: 0;
+}
+
+.wrap {
+ flex-wrap: wrap;
+}
+
+.align-center {
+ align-items: center;
+}
+
+.evenHeight li:nth-child(even) {
+ height: 30px;
+}
+
+.align-start {
+ align-items: flex-start;
+}
+
+.align-end {
+ align-items: flex-end;
+}
+
+.justify-center {
+ justify-content: center;
+}
+
+.justify-end {
+ justify-content: flex-end;
+}
+
+.justify-between {
+ justify-content: space-between;
+}
+
+.justify-around {
+ justify-content: space-around;
+}
+
+.justify-evenly {
+ justify-content: space-evenly;
+}
+
+.order li:nth-child(1) {
+ order: 3;
+}
+
+.order li:nth-child(2) {
+ order: 1;
+}
+
+.order li:nth-child(3) {
+ order: 5;
+}
+
+.order li:nth-child(4) {
+ order: 0;
+}
+
+.order li:nth-child(5) {
+ order: 2;
+}
+
+.order li:nth-child(6) {
+ order: 4;
+}
+
+.grow li {
+ flex-grow: 1;
+ justify-content: flex-start;
+ padding-left: 15px;
+}
+
+.grow li:nth-child(3) {
+ flex-grow: 2;
+}
+
+.shrink li {
+ width: 150px;
+}
+
+.shrink li:nth-child(3) {
+ flex-shrink: 2;
+}
+
+.container {
+ height: 500px;
+}
+
+.container div {
+ background: #fff;
+ padding: 20px 15px;
+ flex-grow: 1;
+ width: 20%;
+}
+
+.container div.grow2 {
+ flex-grow: 2;
 }
