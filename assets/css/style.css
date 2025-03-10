@@ -1,0 +1,239 @@
+* {
+ box-sizing: border-box;
+ font-family: "Lato", serif;
+ line-height: 1.5;
+ color: #333;
+ font-weight: 500;
+}
+
+body {
+ margin: 0;
+}
+
+header,
+footer {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ align-items: center;
+}
+
+nav {
+ background: #007eb3;
+ width: 100%;
+}
+
+ul {
+ list-style: none;
+ display: flex;
+ padding: 0;
+ justify-content: space-evenly;
+}
+
+ul li a {
+ color: white;
+ text-decoration: none;
+ display: block;
+}
+
+ul li a::first-letter {
+ text-transform: uppercase;
+}
+
+main {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 30px;
+}
+
+.title {
+ width: 100%;
+ text-align: center;
+ color: #007eb3;
+ border-bottom: 1px dotted #007eb3;
+ padding-bottom: 8px;
+ word-spacing: 10px;
+ font-size: 2.812rem;
+}
+
+.s-width {
+ max-width: 900px;
+ width: 100%;
+}
+
+.s-width:not(.noGap) {
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+}
+
+.borderBottom {
+ border-bottom: 1px solid #333;
+ padding-bottom: 25px;
+}
+
+.subTitle {
+ font-size: 1.875rem;
+ text-transform: uppercase;
+}
+
+.article__title {
+ font-size: 1.562rem;
+}
+
+.container {
+ display: flex;
+ gap: 15px;
+}
+
+.container p:first-of-type {
+ margin-top: 4px;
+}
+
+strong {
+ font-weight: 600;
+}
+
+.btn {
+ background: #007eb3;
+ color: white;
+ border: none;
+ padding: 7px 16px;
+ border-radius: 6px;
+}
+
+.flex-reverse {
+ flex-direction: row-reverse;
+}
+
+.red {
+ color: #F00;
+}
+.ocre {
+ color: #CD8C56;
+}
+
+table {
+ border-collapse: collapse;
+ border: 1px #eee solid;
+ width: 100%;
+}
+th {
+ font-weight: 600;
+}
+
+th, td {
+ border: 1px solid #eee;
+ padding: 14px 8px;
+}
+
+tbody tr:nth-child(odd) {
+ background: #eee;
+}
+
+.xl-width {
+ align-self: stretch;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ background: url("../img/fond.jpg") center;
+ background-size: cover;
+ /*background-position: center;*/
+}
+
+.content {
+ width: 50%;
+ padding: 15px;
+ background: white;
+}
+
+.padding {
+ padding: 75px 0;
+}
+
+address p {
+ display: flex;
+ gap: 5px;
+ align-items: baseline;
+}
+
+address p a {
+ color: #007eb3;
+ text-decoration: none;
+}
+
+form {
+ padding: 25px 30px 35px;
+ background: url("../img/map-image.png") center #333;
+ background-size: cover;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 25px;
+}
+
+.input__groups {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ gap: 25px;
+}
+
+.inputs {
+ display: flex;
+ flex-direction: column;
+ align-items: stretch;
+ width: 50%;
+ gap: 10px;
+}
+
+.inputs input,
+textarea {
+ padding: 5px 15px;
+ border-radius: 5px;
+ border: none;
+}
+
+textarea {
+ width: 50%;
+}
+
+a {
+ text-decoration: none;
+}
+
+.socials a i {
+ font-size: 35px;
+ width: 35px;
+ height: 35px;
+}
+
+.facebook {
+ color: #4267B2;
+}
+
+.twitter {
+ color: #1da1f2;
+}
+
+.insta {
+ color: #8948C1;
+}
+
+.pinterest {
+ color: #bd081c;
+}
+
+footer {
+ background: #007eb3;
+ color: white !important;
+}
+
+footer :is(a, p) {
+ color: white;
+}
+
+footer a {
+ text-decoration: underline;
+}
