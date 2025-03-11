@@ -1,0 +1,20 @@
+Grid Layout
+Utilisation de grid areas
+
+Entête
+Menu
+Rubrique 1
+Rubrique 2
+Rubrique 3
+Rubrique 4
+Contenu principal
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, repellendus eos dolore voluptatem reprehenderit, doloremque quibusdam mollitia quo voluptatum est totam. Aliquam, eum. Sunt molestiae placeat porro autem, nemo temporibus.
+
+Cumque fugiat reiciendis voluptatibus voluptates vitae exercitationem officiis accusamus, ad, temporibus, nisi, cum autem facilis. Pariatur saepe accusamus voluptatem error dignissimos adipisci impedit tempora, fugit, eos quae, quis omnis! Nostrum.
+
+Réseaux sociaux
+  
+Pied-de-page
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Catherine Denos.

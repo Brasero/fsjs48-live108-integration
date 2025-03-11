@@ -1,0 +1,21 @@
+Grid Layout
+Les bases du principe de grille de Grid Layout
+
+Ceci est un header
+Titre article principal
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus cum obcaecati aliquid molestias sapiente incidunt consequatur reiciendis nisi provident repudiandae ullam officiis, est debitis. Recusandae, id. Laboriosam soluta fugit dignissimos neque sed, perferendis labore sapiente quisquam unde adipisci dolores, qui vitae eaque quam iste rerum. Quibusdam sapiente eligendi fuga nam eaque laudantium omnis ab a voluptatibus ullam facere dignissimos cumque sit, veritatis enim possimus obcaecati cum, qui totam. Id possimus natus ratione dolor iusto quo tenetur cum, quos nam rerum odit culpa aperiam, neque animi omnis sapiente libero veniam. Possimus repellendus placeat aperiam perspiciatis quisquam minima quis quas, dolores exercitationem, voluptates unde architecto corporis deleniti natus ad nisi libero, odit suscipit ipsam perferendis?
+
+Titre article 2
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore hic ullam magnam optio vitae porro eveniet soluta?
+
+Titre article 3
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis sunt iusto tempora excepturi placeat ut odit numquam?
+
+Titre article 4
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit qui illo vel necessitatibus excepturi consequuntur deleniti perferendis ipsum alias nihil odit eligendi rerum rem, quas hic repellat minima at odio?
+
+Copyright et mentions légales
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Catherine Denos.
