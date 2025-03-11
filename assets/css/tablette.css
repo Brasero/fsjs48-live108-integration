@@ -1,7 +1,0 @@
-.main__content {
- flex-wrap: wrap;
-}
-
-.main__content article {
- width: calc(50% - 10px);
-}

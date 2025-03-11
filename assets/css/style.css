@@ -36,8 +36,14 @@ header p {
 }
 
 main {
- max-width: 1200px;
- margin: 0 auto;
+ width: 100%;
+ min-height: 70vh;
+ background: url("../img/phare.jpg");
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .main__header,
@@ -55,4 +61,17 @@ main {
 
 .main__content article {
  padding: 10px 15px;
+}
+
+.container {
+ display: flex;
+ max-width: 800px;
+ padding: 25px;
+ gap: 25px;
+ background: rgba(255,255,255, 0.7);
+}
+
+.container .item img {
+ width: 100%;
+ height: auto;
 }
