@@ -1,5 +1,8 @@
+
+
 * {
  box-sizing: border-box;
+ --text-color: #444444;
 }
 
 html {
@@ -15,7 +18,7 @@ header, footer {
  display: flex;
  flex-direction: column;
  align-items: center;
- background: #444444;
+ background: var(--text-color);
 }
 
 footer {
@@ -38,10 +41,13 @@ header p {
 main {
  width: 100%;
  display: grid;
- grid-template-columns: 2fr 1fr 1fr;
- grid-template-rows: 100px 1fr 1fr 100px;
- gap: 15px;
- background: #dedede;
+ grid-template-areas:
+ "header header header"
+ "menu content socials"
+ "footer footer footer"
+;
+ grid-template-columns: 150px 1fr 150px;
+ gap: 10px;
 }
 
 .main__header,
@@ -51,68 +57,81 @@ main {
  padding: 15px;
 }
 
-.article {
+.header {
+ grid-area: header;
+ font-size: 2rem;
+ background: #bcbcbc;
+ padding: 15px 10px;
+ font-weight: 700;
+}
+
+nav {
+ grid-area: menu;
+ background: #F0C632;
+ padding: 5px 10px;
+}
+
+nav h2 {
+ margin-top: 0;
+ color: var(--text-color);
+}
+
+nav ul {
+ list-style: none;
+ padding-left: 0;
+}
+
+nav ul li {
+ padding: 10px;
+ margin-bottom: 5px;
+ border: 1px solid red;
+}
+
+nav ul li a {
+ color: red;
+ text-decoration: none;
+}
+
+.content {
+ grid-area: content;
+ background: white;
  padding: 15px;
 }
 
-.header {
- grid-column: 1 / span 3;
- background: #999999;
+.content h2 {
+ color: var(--text-color);
+ margin-top: 0;
 }
 
-.articlePrincipal {
- grid-row: 2 / span 2;
- background: white;
- display: flex;
- flex-direction: column;
- justify-content: flex-start;
- align-items: center;
+.socials {
+ grid-area: socials;
+ background: #F7AA34;
+ padding: 15px;
+
+ h2 {
+  color: var(--text-color);
+  margin-top: 0;
+ }
+
+ div {
+  width: 100%;
+  height: 30px;
+
+  a {
+   color: #DD5735;
+
+   i {
+    font-size: 2rem;
+   }
+  }
+ }
 }
 
-.article2 {
- background: #fc3;
-}
-
-.article3 {
- background: #fa3;
-}
-
-.article4 {
- grid-column: 2 / span 2;
- background: #f83;
-}
 
 .footer {
- background: #bbb;
- grid-column: 1 / span 3;
-}
-
-@media screen and (max-width: 800px) {
- .article2, .article3 {
-  grid-column: 2 / span 2;
- }
- main {
-  grid-template-rows: 100px 1fr 1fr 1fr 100px;
- }
- .articlePrincipal {
-  grid-row: 2 / span 3;
- }
-}
-
-@media screen and (max-width: 600px) {
- .articlePrincipal {
-  grid-row: unset;
-  grid-column: unset;
- }
-
- main {
-  grid-template-rows: 100px repeat(2, 1fr) 100px;
-  grid-template-columns: 1fr 1fr;
- }
- .article2, .article3, .article4 {
-  grid-column: unset;
- }
- .header, .footer {
-  grid-column: 1 / span 2;
- }
+ grid-area: footer;
+ font-size: 2rem;
+ background: #bcbcbc;
+ padding: 15px 10px;
+ font-weight: 700;
 }
