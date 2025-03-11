@@ -237,3 +237,8 @@ footer :is(a, p) {
 footer a {
  text-decoration: underline;
 }
+
+.responsive {
+  width: 49%;
+ height: auto;
+}
