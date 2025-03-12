@@ -65,7 +65,7 @@ nav ul a {
  display: block;
 }
 
-a.active {
+a.active, nav a:hover {
  background: white;
  color: #00748D;
 }
