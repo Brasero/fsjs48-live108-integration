@@ -1,0 +1,107 @@
+
+.hero {
+ width: 100%;
+ aspect-ratio: 16/9;
+ background: url("../img/bg-header.jpg") center top no-repeat;
+ background-size: contain;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 2rem;
+}
+
+.hero .title {
+ padding: .5rem .7rem;
+ background: #CB8606;
+ color: white;
+ text-transform: uppercase;
+ font-size: 1.66rem;
+ font-family: "Fjalla One", sans-serif;
+}
+
+.hero .subTitle {
+ font-family: "Fjalla One", sans-serif;
+ font-size: 1.11rem;
+ background: white;
+ color: #00748D;
+ padding: .5rem .7rem;
+}
+
+/* Préstations */
+
+
+#presta .cards {
+ gap: 3rem;
+ margin: 3rem 0;
+}
+
+#presta .card {
+ gap: 2rem;
+}
+
+#presta .card .icon-container {
+ width: 35px;
+ aspect-ratio: 1/1;
+ background: #CB8606;
+ color: white;
+ font-size: 1.11rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#presta .card h4 {
+ font-size: 1.38rem;
+ font-family: "Fjalla One", sans-serif;
+ font-weight: 500;
+ color: #363636;
+}
+
+#presta .card p {
+ color: #41414141;
+ font-size: 1rem;
+}
+
+#presta .card a {
+ display: block;
+ text-align: center;
+ background: #00748D;
+ padding: .5rem 1rem;
+ color: white;
+ width: max(90%, 150px); /* max() appliquera la plus grande valeur parmis celle spécifiée */
+}
+
+/* Partner */
+
+#partner .cards {
+ margin: 2rem 0;
+ gap: 3rem;
+}
+
+#partner article {
+ border: 2px solid #00748D;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 990px) {
+ .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  padding-inline: 3rem;
+ }
+ #partner {
+  align-items: stretch;
+ }
+ #partner .sectionTitle {
+  align-self: center;
+ }
+}
+
+@media screen and (max-width: 680px) {
+ .cards {
+  grid-template-columns: 1fr;
+ }
+}

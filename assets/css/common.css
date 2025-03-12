@@ -1,0 +1,121 @@
+/*Utility classes*/
+.flex {
+ display: flex;
+ flex-direction: row;
+}
+.jCenter {
+ justify-content: center;
+}
+.aCenter {
+ align-items: center;
+}
+.fColumn {
+ flex-direction: column;
+}
+.sectionTitle {
+ color: #00748D;
+ font-family: 'Fjalla One', sans-serif;
+ font-size: 1.66rem;
+}
+
+.sectionTitle::after,
+.sectionTitle::before {
+ content: "-";
+ color: #CB8606;
+ margin: 0 .5rem;
+}
+
+/*Utility classes End*/
+
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+ font-size: 18px;
+ font-family: "Nunito", monospace;
+}
+
+header, footer {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ background: url("../img/path.png") repeat-x bottom #00748D;
+ padding: 1.5rem .3rem;
+ color: white;
+ font-family: "Fjalla One", sans-serif;
+ font-size: 1.11rem;
+}
+
+.logo-container a {
+ display: flex;
+ align-items: flex-end;
+ gap: 1rem;
+}
+
+nav ul {
+ display: flex;
+ justify-content: space-between;
+ list-style: none;
+ gap: 1rem;
+}
+
+nav ul a {
+ padding: .3rem .5rem;
+ width: 100%;
+ display: block;
+}
+
+a.active {
+ background: white;
+ color: #00748D;
+}
+
+body {
+ background: #f9f9f9;
+}
+
+main {
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+@media screen and (max-width: 990px) {
+ header {
+  flex-direction: column;
+  align-items: stretch;
+  padding-inline: 2rem;
+  gap: 2rem;
+ }
+ header .logo-container {
+  align-self: center;
+ }
+
+ header .logo-container a {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ footer {
+  padding-inline: 1rem;
+  justify-content: space-between;
+ }
+}
+
+@media screen and (max-width: 680px) {
+ footer {
+  flex-direction: column-reverse;
+  gap: 2rem;
+ }
+ footer .logo-container a {
+  flex-direction: column;
+  align-items: center;
+ }
+}
+
+@media screen and (max-width: 630px) {
+ header nav ul {
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+ }
+}

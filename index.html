@@ -5,46 +5,121 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/9b3cf40a91.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Grid layout</title>
+<!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/9b3cf40a91.js" crossorigin="anonymous"></script>
+<!-- Font Awesome Kit End -->
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<!-- Fonts End -->
+
+<!-- StyleSheet -->
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/common.css" />
+  <link rel="stylesheet" href="./assets/css/home.css" />
+<!-- StyleSheet End -->
+  <title>Accueil - Archi Design</title>
 </head>
 <body>
-<header>
-  <h1>Images responsives</h1>
-  <p>Savoir intégrer des images responsives</p>
-</header>
 
-<main>
-  <div class="header">Entête</div>
-  <nav class="menu">
-    <h2>Menu</h2>
-    <ul>
-      <li><a href="">Rubrique 1</a></li>
-      <li><a href="">Rubrique 2</a></li>
-      <li><a href="">Rubrique 3</a></li>
-      <li><a href="">Rubrique 4</a></li>
-    </ul>
-  </nav>
-  <div class="content">
-    <h2>Contenu principal</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolorem eaque earum exercitationem natus neque, nesciunt nulla perferendis quam quas suscipit ullam vel? Blanditiis, vel?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis est ex fugit harum quasi rerum.</p>
-  </div>
-  <div class="socials">
-    <h2>Réseaux sociaux</h2>
-    <div>
-      <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+  <header>
+    <div class="logo-container">
+      <a href="./index.html">
+        <img src="./assets/img/logo.png" alt="Logo archiDesign" />
+        <span>Intérieurs à la carte</span>
+      </a>
     </div>
-  </div>
-  <div class="footer">Pied-de-page</div>
-</main>
-<footer>
-  <img src="./assets/img/img.png" alt="logo" />
-  <p>CE MATÉRIEL PÉDAGOGIQUE EST LA PROPRIÉTÉ DE LA 3W ACADEMY. CET EXERCICE A ÉTÉ RÉALISÉ PAR CATHERINE DENOS.</p>
-</footer>
+    <nav>
+      <ul>
+        <li><a href="./index.html" class="active">Accueil</a></li>
+        <li><a href="./index.html">A propos</a></li>
+        <li><a href="./realisation.html">Réalisations</a></li>
+        <li><a href="./index.html">Actualité</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="hero">
+      <h1 class="title">Conception et réalisation</h1>
+      <h2 class="subTitle">Notre métier : imaginer et réaliser votre intérieur</h2>
+    </div>
+    <section id="presta" class="flex fColumn jCenter aCenter">
+      <h3 class="sectionTitle">Nos prestations</h3>
+      <div class="cards flex">
+        <aside class="card presta-item flex fColumn jCenter aCenter">
+          <div class="icon-container">
+            <i class="fa-solid fa-book"></i>
+          </div>
+          <h4>Cahier des charges</h4>
+          <p>
+            Notre cahier des charges détaillé vous permettra de contrôler chaque étape de nos interventions :
+            de l'élaboration des plans à leur mise en œuvre.
+          </p>
+          <a href="">En savoir plus</a>
+        </aside>
+        <aside class="card presta-item flex fColumn jCenter aCenter">
+          <div class="icon-container">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <h4>Shopping personnalisé</h4>
+          <p>
+            Nous aimons créer des espaces innovateurs répondants aux besoins et aux attentes de notre clientèle.
+            Nous restons à l’écoute de vos besoins et de votre budget.
+          </p>
+          <a href="">En savoir plus</a>
+        </aside>
+        <aside class="card presta-item flex fColumn jCenter aCenter">
+          <div class="icon-container">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <h4>Suivi de chantier</h4>
+          <p>
+            Nous assurons un suivi auprès des prestataires afin de nous assurer du respect du cahier des charges,
+            de l'utilisation de matériaux de qualité et des délais.
+          </p>
+          <a href="">En savoir plus</a>
+        </aside>
+        <aside class="card presta-item flex fColumn jCenter aCenter">
+          <div class="icon-container">
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <h4>Clé en main</h4>
+          <p>
+            Notre réputation repose sur notre engagement à travailler étroitement avec notre clientèle pour
+            livrer un projet à l’image et aux attentes de chacun.
+          </p>
+          <a href="">En savoir plus</a>
+        </aside>
+      </div>
+    </section>
+    <section id="partner" class="flex fColumn jCenter aCenter">
+      <h3 class="sectionTitle">Nos prestataires</h3>
+      <div class="cards flex">
+        <article><img src="./assets/img/partner1.png" alt="Oslo logo" class="logo"></article>
+        <article><img src="./assets/img/partner2.png" alt="Xoxo logo" class="logo"></article>
+        <article><img src="./assets/img/partner3.png" alt="Best of NorthWay logo" class="logo"></article>
+        <article><img src="./assets/img/partner4.png" alt="Home logo" class="logo"></article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="logo-container">
+      <a href="./index.html">
+        <img src="./assets/img/logo.png" alt="Logo archiDesign" />
+        <span>Intérieurs à la carte</span>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="https://facebook.fr"><i class="fa-brands fa-xl fa-facebook-f"></i></a></li>
+        <li><a href="https://instagram.fr"><i class="fa-brands fa-xl fa-instagram"></i></a></li>
+        <li><a href="https://youtube.fr"><i class="fa-brands fa-xl fa-youtube"></i></a></li>
+        <li><a href="https://rss.app"><i class="fa-solid fa-xl fa-rss"></i></a></li>
+      </ul>
+    </nav>
+  </footer>
+
 </body>
 </html>
